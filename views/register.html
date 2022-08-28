@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <form action="register.html" method="POST">
+    <div>
+        <label for="name">Nombre y apellido</label>
+        <input type="text" name="name" id="name" placeholder="Nombre y apellido" required>
+    </div>
+    <div>
+        <label for="name">Nombre de usuario</label>
+        <input type="text" name="NombreUsuario" id="name" placeholder="Username" required>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+    </div>
+    <div>
+        <label for="password">Contrasena</label>
+        <input type="password" name="password" id="password" placeholder="Constrasena" required>
+    </div>
+        <label for="DOB">fecha de nacimiento</label>
+        <input type="date" name="fecha" id="DOB">
+    </div>
+    <div>
+        <label>Domicilio</label>
+        <input type="domicilio" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+    </div>
+    <div>
+        Perfil de usuario
+        </div>
+        <label for="comprador">Comprador</label>
+        <input type="radio" name="perfil de usuario" id="comprador" value="comprador">
+
+        <label for="vendedor">Vendedor</label>
+        <input type="radio" name="perfil de usuario" id="vendedor" value="vendedor">
+        <div>
+
+        Intereses
+        <div>
+        <label for="Electro">Electro</label>
+        <input type="checkbox" name="Intereses" id="Electro">
+        </div>
+        <div>
+        <label for="moda">Moda</label>
+        <input type="checkbox" name="Intereses" id="moda">
+        </div>
+        <div>
+            <label for="hogar">Hogar</label>
+            <input type="checkbox" name="Intereses" id="hogar">
+        </div>
+        <div>
+            <label for="jugueteria">Jugueteria</label>
+            <input type="checkbox" name="Intereses" id="jugueteria">
+        </div>
+        <div>
+                <label for="vidaSana">Vida sana</label>
+                <input type="checkbox" name="Intereses" id="vidaSana">
+        </div>
+        <div>
+        Foto de Usuario
+        <label for="file">Subir foto</label>
+        <input id="file" type="file" name="file">
+        </div>
+
+    </div>
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>   
+  </form>
+</body>
