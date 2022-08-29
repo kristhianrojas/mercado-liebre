@@ -24,8 +24,13 @@ p{
     font-size: 16px;
 }
 
-footer{
+.footer{
     text-align: center;
+    color: #666;
+}
+
+footer h4{
+    font-weight: 500;
 }
 
 .top-header{

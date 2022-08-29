@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <form action="login.html" method="POST">
 
-        <label for="name">Nombre de usuario</label>
-        <input type="text" name="NombreUsuario" id="name" placeholder="Username" required>
-    </div>
-    <div>
-        
-        <label for="password">Contrasena</label>
-        <input type="password" name="password" id="password" placeholder="Constrasena" required>
-    </div>
-    </div>
+    <div class="full-screen-container">
+        <div class="login-container">
+            <h3 class="login-title">Bienvenidxs</h3>
 
-    <button type="submit">Enviar</button>
-    <button type="reset">Borrar</button>   
+
+            <form action="login.html" method="POST">
+                <div class="input-group">
+                    <label for="name">Email</label>
+                    <input type="text" name="Email" id="name" placeholder="Email" required>
+                </div>
+                <div class="input-group"></div>
+                    <label for="password">Contrasena</label>
+                    <input type="password" name="password" id="password" placeholder="Constraseña" required>
+                </div>
+            </div>
+    <button type="submit"
+    class="login-button">Iniciar sesion</button>
+    <button type="reset"
+    class="borrar">Borrar</button>
   </form>
 </body>
