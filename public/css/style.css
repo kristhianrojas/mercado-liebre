@@ -1,11 +1,87 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
 body{
-    font-family: 'Roboto';
     background-color:#ebebeb;
+}
+
+/*header*/
+
+header{
+    background-color: #EAC926;
+}
+
+.logo-sitio{
+    width: 10%;
+}
+
+.search-input{
+    width: 320px;
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+
+.txt-compra{
+    max-width: 350px;
+    transition: 1s all;
+
+}
+.txt-compra i {
+    color: #1259c3;
+}
+
+/*
+.txt-compra:hover  {
+    transform: ;
+}
+
+*/
+
+/*nav-bar*/
+
+.left-links, .right-links{
+    font-size: 12px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.left-links li a, .right-links li a{
+    color : #222222;
+ }
+
+.burger-menu{
+    text-align: center;  
+}
+.burger-menu i {
+    
+    height: auto;
+    padding: 10px;
+    background-color: #1259c3;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.banner-pub{
+    margin-top: 2px;
+    box-sizing: border-box;
+}
+
+.banner-pub img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section{
+    margin-top: 10px;
 }
 
 p{
@@ -24,25 +100,100 @@ p{
     font-size: 16px;
 }
 
-.footer{
-    text-align: center;
-    color: #666;
+
+/* footer*/
+
+.footer-main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+    height: auto;
+    width: 100vw;
+    padding-top: 20px;
+    color: #111;
 }
 
-footer h4{
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.footer-content h4{
     font-weight: 500;
 }
 
-.top-header{
-    background-color: #EAC926;
+.footer-content p{
+    font-weight: 500;
+    margin: 10px auto;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-.top-links{
-    font-size: 12px;
+.footer-content i{
+    color: #1259c3; 
+    position: relative;
+    align-items: center;
+    bottom: 20px;
+    left: 10%;
 }
-.top-links2{
-    font-size: 12px;
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+    
 }
-.manito{
-    text-align: center;
+
+
+
+@media (min-width: 1100px){
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid #ebebeb;
+        margin-top: 20px;
+    }
+
+    .visita,.ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
 }
+
+
+@media (min-width: 780px){
+    .logo-sitio{
+        width:  10%;
+    }
+
+     .right-links, .left-links{
+        display: block;
+    }
+
+    .top-nav-links{
+        display : flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-nav-links ul li{
+        margin: 0 15px;
+    }
+}
+
+  

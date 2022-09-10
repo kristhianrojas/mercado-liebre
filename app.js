@@ -5,7 +5,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 //servidor del puerto 3000
-app.listen(3000, ()=>{
+app.listen(4000, ()=>{
     console.log('Servidor funcionando');
 });
 
