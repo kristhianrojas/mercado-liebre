@@ -6,6 +6,7 @@
 
 body{
     background-color:#ebebeb;
+    font-family: 'Roboto';
 }
 
 /*header*/
@@ -26,7 +27,7 @@ header{
 
 .txt-compra{
     max-width: 350px;
-    transition: 1s all;
+    /*transition: 1s all;*/
 
 }
 .txt-compra i {
@@ -75,21 +76,125 @@ header{
     width: 100%;
 }
 
+/*main section-productos*/
+
 main{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
-section{
+
+section{ /*revisar*/
     margin-top: 10px;
+}
+
+.productos-visita{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.titles{
+    font-size: 24px;
+    color: #302c2b;
+}
+
+.articles{
+    margin-top: 10px;
+    background-color:#ebebeb;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.articles:hover #name-tag{
+    display: block;
+   
+}
+.articles:hover {
+    
+    box-shadow: #222222 0px 0px 20px;
+    transform: scale(1.02);
+  
+}
+
+.articles:hover .truck-icon{ /*revisar*/
+    transform: scale(1)
+
+
+}
+.articles:hover .truck-icon i{ 
+   color: #1259c3;
+   border-radius: 50%;
+   border: 1px solid #1259c3;
+
+
+}
+.articles:hover .descuentos{
+    color: #1259c3;
+}
+
+.article-box{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 2s all;
+    background-color: #fff;
+}
+
+.product-img{
+    width: 100%;
+}
+
+.truck-icon{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: -20px;
+    left: 25%;
+    transition: 1s all;
+   
+   
+}
+.truck-icon i{
+    color: green;
+    font-size: 16px;
+    padding: 9px;
+    padding-top: 13px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+.product-detail{
+    display: flex;
+}
+
+.product-detail .precios{
+    flex-grow: 0.3;
+}
+
+.product-detail .descuentos{
+    flex-grow: 0.7;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    color: #39b54a;
+}
+
+#name-tag{
+    display: none;
+   
 }
 
 p{
     font-size: 12px;
-}
-
-.titulares{
-    font-size: 24px;
 }
 
 .precios{
@@ -98,6 +203,13 @@ p{
 
 .descuentos{
     font-size: 16px;
+}
+
+/*body*/
+
+.productos-visita{
+    margin-top: 10px;
+    margin-bottom: 20px;    
 }
 
 
@@ -112,6 +224,7 @@ p{
     width: 100vw;
     padding-top: 20px;
     color: #111;
+    
 }
 
 .footer-content{
@@ -158,24 +271,23 @@ p{
 
 
 
-@media (min-width: 1100px){
+@media (min-width: 376px) {
 
-    footer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border-top: 1px solid #ebebeb;
-        margin-top: 20px;
+    .left-links, .right-links{
+        display: block;
     }
 
-    .visita,.ofertas{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+    .burger-menu{
+        display: none;  
+    }*/
 
+    .articles{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: 2s all;
     }
+
+
 }
-
 
 @media (min-width: 780px){
     .logo-sitio{
@@ -194,6 +306,48 @@ p{
     .top-nav-links ul li{
         margin: 0 15px;
     }
+
+    .section-visita > .articles,.section-ofertas > .articles{
+        flex: 40%;
+    }
+    .section-visita,.section-ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    
+    }
+
+    .section-visita > .articles,.section-ofertas > .articles{
+        flex: 40%;
+    }
 }
 
-  
+
+
+@media (min-width: 1100px){
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid #ebebeb;
+        margin-top: 20px;
+    }
+
+    .visita,.ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+    .section-visita > .articles,.section-ofertas > .articles{
+        flex: 1 0 21%;
+    }
+    .section-visita,.section-ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+}
